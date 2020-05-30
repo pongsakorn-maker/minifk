@@ -21,7 +21,7 @@ spec:
         app: backend
     spec:
       containers:
-      - image: pskrnreo/team21-backend:v0.1
+      - image: pskrnreo/team21-backend:v0.2
         imagePullPolicy: IfNotPresent
         name: team21-backend
       dnsPolicy: ClusterFirst
