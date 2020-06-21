@@ -3,14 +3,15 @@ kind: Service
 metadata:
   labels:
     app: front
+    fluxcd.io/sync-gc-mark: sha256.Y-TFljT3eF3eekoiB1yLjHD-p0ZgzVhzpkolOpeAqQg
   name: front
   namespace: b6005795
 spec:
   externalTrafficPolicy: Cluster
   ports:
-    port: 9090
+    port: 8080
     protocol: TCP
-    targetPort: 9090
+    targetPort: 8080
   selector:
     app: front
   sessionAffinity: None

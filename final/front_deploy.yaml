@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   labels:
     app: front
+    fluxcd.io/sync-gc-mark: sha256.Y-TFljT3eF3eekoiB1yLjHD-p0ZgzVhzpkolOpeAqQg
   name: front
   namespace: b6005795
 spec:
